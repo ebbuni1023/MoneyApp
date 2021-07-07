@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>363440631184-l16lajp9r5l5skbd508h4ll16oasbtu7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.363440631184-l16lajp9r5l5skbd508h4ll16oasbtu7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDrfoYXUtcPfHey8QNnAaWBuTibQPjGbn4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>363440631184</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.midtermApp</string>
+	<key>PROJECT_ID</key>
+	<string>midterm-3abaa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>midterm-3abaa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:363440631184:ios:d8c7bb598c3602481a5715</string>
+	<key>DATABASE_URL</key>
+	<string>https://midterm-3abaa-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

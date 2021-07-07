@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "363440631184",
+    "firebase_url": "https://midterm-3abaa-default-rtdb.firebaseio.com",
+    "project_id": "midterm-3abaa",
+    "storage_bucket": "midterm-3abaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363440631184:android:175ea12c741d22631a5715",
+        "android_client_info": {
+          "package_name": "com.midtermapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363440631184-9dvqhsl6tnc72hiddokep88jejujlku0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9xth12fzY0jzhuDxdYHJZ4SHo1q1lIDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363440631184-9dvqhsl6tnc72hiddokep88jejujlku0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "363440631184-l16lajp9r5l5skbd508h4ll16oasbtu7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.midtermApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
