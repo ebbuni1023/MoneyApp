@@ -5,6 +5,7 @@ import Friend from '../screens/Friend.js'
 import { TouchableOpacity, Text } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import Profile from '../screens/Profile'
+import Chat from '../screens/Chat.js'
 const Stack = createStackNavigator()
 async function logOut() {
     try {
@@ -30,6 +31,8 @@ export default function SignInStack({navigation}) {
             }}
             />
         <Stack.Screen name='Profile' component={Profile}/>
+        <Stack.Screen name='Chat' component={Chat}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   )

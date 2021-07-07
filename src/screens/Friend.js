@@ -15,7 +15,7 @@ export default function Friend({navigation}) {
         onPress = {() => navigation.navigate('Profile')}/>
       </TouchableOpacity>
       <Text style={styles.title}>
-        You haven't joined any chat rooms yet :'(
+        To view your friend list please sign in 
       </Text>
     </View>
   )

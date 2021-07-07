@@ -1,7 +1,8 @@
-import React, { useState, useEffect, createContext } from 'react'
-import auth from '@react-native-firebase/auth'
-import SignInStack from '../Stack/SignInStack'
-import SignOutStack from '../Stack/SignOutStack'
+import React, { useState, useEffect, createContext } from 'react';
+import SignInStack from '../Stack/SignInStack';
+import SignOutStack from '../Stack/SignOutStack';
+import auth from '@react-native-firebase/auth';
+
 
 export const AuthContext = createContext(null)
 

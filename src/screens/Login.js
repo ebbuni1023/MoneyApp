@@ -19,17 +19,17 @@ async function login() {
       }
     }
   }
-
-
+  
+  
 export default function Login() {
   // firebase login function later
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Midterm App</Text>
+      <Text style={styles.title}>Welcome to 🔥 Chat App</Text>
       <TouchableOpacity
         style={styles.button}
-        >
+        onPress={login}>
         <Text style={styles.buttonText}>Enter Anonymously</Text>
       </TouchableOpacity>
     </View>
