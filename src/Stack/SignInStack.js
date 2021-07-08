@@ -5,7 +5,9 @@ import Friend from '../screens/Friend.js'
 import { TouchableOpacity, Text } from 'react-native'
 import auth from '@react-native-firebase/auth'
 import Profile from '../screens/Profile'
-import Chat from '../screens/Chat.js'
+import CreateChatRoom from '../screens/CreateChatRoom'
+import Messages from '../screens/Messages'
+
 const Stack = createStackNavigator()
 async function logOut() {
     try {
@@ -18,20 +20,40 @@ export default function SignInStack({navigation}) {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+        name='ChatRoom'
+        component={Friend}
+        options={({ navigation }) => ({
+          title: 'Chat Room',
+          headerLeft: () => (
+            <TouchableOpacity
+              style={{ marginLeft: 10 }}
+              onPress={() => navigation.navigate(CreateChatRoom)}>
+              <Text>+</Text>
+            </TouchableOpacity>
+          ),
+          headerRight: () => (
+            <TouchableOpacity style={{ marginRight: 10 }} onPress={logOut}>
+              <Text>Log out</Text>
+            </TouchableOpacity>
+          )
+        })}
+        />
         <Stack.Screen
-            name='ChatRoom'
-            component={Friend}
-            options={{
-                title: 'Chat Room',
-                headerRight: () => (
-                <TouchableOpacity style={{ marginRight: 10 }} onPress={logOut}>
-                <Text>Logout</Text>
-                </TouchableOpacity>
-                ),
-            }}
-            />
+          name='CreateChatRoom'
+          component={CreateChatRoom}
+          options={{
+            title: 'Create a room'
+          }}
+        />
+        <Stack.Screen
+          name='Messages'
+          component={Messages}
+          options={({ route }) => ({
+            title: route.params.thread.name
+          })}
+        />
         <Stack.Screen name='Profile' component={Profile}/>
-        <Stack.Screen name='Chat' component={Chat}/>
 
       </Stack.Navigator>
     </NavigationContainer>

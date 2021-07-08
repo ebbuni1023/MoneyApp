@@ -26,7 +26,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to 🔥 Chat App</Text>
+      <Text style={styles.title}>Welcome to GSU</Text>
       <TouchableOpacity
         style={styles.button}
         onPress={login}>

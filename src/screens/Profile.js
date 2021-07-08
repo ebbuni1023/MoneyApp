@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect } from 'react'
 import { Text, View, StyleSheet, TextInput,Button,TouchableOpacity } from 'react-native'
-import Chat from './Chat'
+import Friend from './Friend';
+import Messages from './Messages';
 
 export default function Profile({navigation}) {
 
@@ -17,7 +18,7 @@ export default function Profile({navigation}) {
                 onChangeText={(text) => setName(text)}
                 />
                 <Button 
-                onPress = {() => navigation.navigate('Chat')}
+                onPress = {() => navigation.navigate('Friend')}
                 title="Enter"
                 />               
             </View>
